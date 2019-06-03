@@ -79,7 +79,7 @@ class Student
       LIMIT 1
     SQL
     #binding.pry
-    DB[:conn].execute(sql, name).map do ||
+    DB[:conn].execute(sql, name).map do |row|
 
     end
   end
