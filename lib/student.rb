@@ -75,8 +75,10 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
+      WHERE name = ?
+      LIMIT 1
     SQL
     #binding.pry
-    DB[:conn].execute(sql)
+    #DB[:conn].execute(sql)
   end
 end
