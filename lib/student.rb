@@ -77,6 +77,7 @@ class Student
       FROM students
       WHERE name = ?
     SQL
+    binding.pry
     DB[:conn].execute(sql)#.select { |student| student[1] == name }
     #self.new_from_db(student)
   end
