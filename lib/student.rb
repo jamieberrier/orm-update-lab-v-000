@@ -64,7 +64,6 @@ class Student
 
   # The .new_from_db method uses these three array elements to create a new Student object with these attributes.
   def self.new_from_db(student)
-    binding.pry
     Student.new(student[0], student[1], student[2])
   end
 end
