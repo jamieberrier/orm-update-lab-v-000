@@ -69,7 +69,7 @@ class Student
 
   # This class method takes in an argument of a name. It queries the database table for a record that has a name of the name passed in as an argument. Then it uses the #new_from_db method to instantiate a Student object with the database row that the SQL query returns.
 
-  def self.find_by_name
+  def self.find_by_name(name)
 
   end
 end
