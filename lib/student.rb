@@ -72,6 +72,8 @@ class Student
   # name passed in as an argument. Then it uses the #new_from_db method to
   # instantiate a Student object with the database row that the SQL query returns.
   def self.find_by_name(name)
-
+    sql = <<-SQL
+    SQL
+    DB[:conn].execute(sql)
   end
 end
