@@ -77,7 +77,7 @@ class Student
       FROM students
     SQL
     binding.pry
-    student = DB[:conn].execute(sql).select { |student| student.name == name }
+    student = DB[:conn].execute(sql).select { |student| student[1] == name }
     self.new_from_db(student)
   end
 end
