@@ -77,6 +77,6 @@ class Student
       FROM students
     SQL
     student = DB[:conn].execute(sql).select { |student| student[1] == name }
-    self.new_from_db(student)
+    #self.new_from_db(student)
   end
 end
