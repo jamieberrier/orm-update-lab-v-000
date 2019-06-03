@@ -20,7 +20,7 @@ class Student
         name TEXT,
         grade INTEGER
         )
-        SQL
+    SSQL
     DB[:conn].execute(sql)
   end
 
