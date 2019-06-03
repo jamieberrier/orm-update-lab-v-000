@@ -75,7 +75,6 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      #{}WHERE name = name
     SQL
     #binding.pry
     DB[:conn].execute(sql)#.select { |student| student[1] == name }
