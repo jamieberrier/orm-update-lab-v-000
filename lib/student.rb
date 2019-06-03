@@ -75,7 +75,6 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE name = ?
     SQL
     binding.pry
     DB[:conn].execute(sql)
