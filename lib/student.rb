@@ -61,7 +61,7 @@ class Student
   # this array will contain three elements in this order: the id, name and grade
   # of a student.
 
-The .new_from_db method uses these three array elements to create a new Student object with these attributes.
+  # The .new_from_db method uses these three array elements to create a new Student object with these attributes.
   def self.new_from_db(student)
     Student.new(student[], student[], student[])
   end
